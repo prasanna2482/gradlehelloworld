@@ -29,7 +29,7 @@ dependencies {
 jacocoTestReport {
     group = 'Reporting'
     description = 'Generate Jacoco coverage reports after running tests.'
-    additionalSourceDirs = files(sourceSets.main.allJava.srcDirs)
+    sourceSets sourceSets.main
 }
 
 runrobot.debugfile = 'debug.log'

@@ -16,6 +16,7 @@ jar {
                    'Implementation-Version': version, 
                    'Main-Class': 'edu.jsu.mcis.HelloWorld'
     }
+    archiveFileName = 'hello-world-1.0.jar'
 }
 
 repositories {

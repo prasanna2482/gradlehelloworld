@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/helloworld-demo-new:20250128123532-patched
+          image: testazurecontainer1.azurecr.io/gradlehello:e6f5384
           ports:
             - containerPort: 80
           env:

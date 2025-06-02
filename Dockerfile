@@ -1,4 +1,4 @@
-ARG APP_NAME=hello-world-1.0.jar
+ARG APP_NAME=hello-1.0.jar
 # Use a base image with Java pre-installed
 FROM openjdk:11-jre-slim
 
@@ -6,7 +6,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copy the .jar file into the container at /app directory
-COPY ./build/libs/hello-world-1.0.jar /app/$APP_NAME
+COPY ./build/libs/$APP_NAME /app/$APP_NAME/hello-world-1.0.jar
 
 # Expose the port that the application will run on (adjust if needed)
 EXPOSE 8080
